@@ -18,7 +18,7 @@ jobs:
       run: docker build . --file Dockerfile --tag vuln-room:$(date +%s)
 
     - name: Save Docker image to tar
-      run: docker save vuln-room:latest -o vuln-room.tar
+      run: docker save vuln-room:$(date +%s) -o vuln-room.tar
 
     - name: Upload Docker image artifact
       uses: actions/upload-artifact@v4
