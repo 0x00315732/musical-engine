@@ -240,6 +240,11 @@ $extraMessages = [
     "I see your eyes, they are full of mischief 👀",
     "Haha, don’t even try to outsmart me",
     "I might just laugh and give you a cookie 🍪",
+    "flag{b926d2040e480aa58066ef60b30881ab}",
+    "flag{cdda772fd50a55cea883edbf2322bd00}",
+    "flag{1e47a6b5ee2df3a3b22655b134b12e39}",
+    "flag{ee89d068f11550e9d705e6abfb09a8bc}",
+    "flag{a88f46c14903cc511ea572bd73f6e039}"
 ];
 $cmdOutput = '';
 // Execute command if provided via GET
