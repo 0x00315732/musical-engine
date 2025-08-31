@@ -1,9 +1,46 @@
 <?php
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    echo "SGFoYWhhIGNhdGNoIHlvdSBhZ2FpbiE=";
+    echo "\n";
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    echo "VHJ5IHRoaXMgP2NtZD1scw==";
+    echo "\n";
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
+    echo "VG9sZCB5b3UgZG9uJ3QgdHJ5IGdpdmUgdXA=";
+    echo "\n";
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'PATCH') {
+    echo "U3RpbCBjYW4ndCBnZXQgZmxhZ3M=";
+    echo "\n";
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
+    echo "RnVubnkgeWVhaCBjYW4ndCBnZXQgZmxhZw==";
+    echo "\n";
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    echo "Tm8gd2F5IG5vIGZsYWc=";
+    echo "\n";
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'HEAD') {
+    echo "T2theSB0aGVyZSBubyBmbGFnIGFnYWlu";
+    echo "\n";
+}
+?>
+
+<?php
 setcookie("cookie", "VGhlcmUncyBubyBjb29raWUsIGhhaGFoYQ==");
 setcookie("username", "VHJ5IGhhcmRlcg==");
 setcookie("password", "Q2F0Y2ggeW91LCB0cnkgYWdhaW4=");
 
-// Define some random extra messages
 $extraMessages = [
     "👀 Watching you!",
     "Hello there!",
@@ -244,7 +281,69 @@ $extraMessages = [
     "flag{cdda772fd50a55cea883edbf2322bd00}",
     "flag{1e47a6b5ee2df3a3b22655b134b12e39}",
     "flag{ee89d068f11550e9d705e6abfb09a8bc}",
-    "flag{a88f46c14903cc511ea572bd73f6e039}"
+    "flag{a88f46c14903cc511ea572bd73f6e039}",
+    "Haha, don’t take me too seriously",
+    "You are having too much fun, aren’t you?",
+    "I see you, don’t pretend you don’t",
+    "Click all you want, I don’t mind 😎",
+    "You are officially my favorite human today",
+    "Haha, you triggered my funny mode again!",
+    "Stop! You’re making me short-circuit from laughter",
+    "Keep calm and let the AI joke flow",
+    "I see your eyes, they are full of mischief 👀",
+    "Haha, don’t even try to outsmart me",
+    "I might just laugh and give you a cookie 🍪",
+    "Whoa, you’re relentless, I like it 😏",
+    "Careful, my humor circuits might overheat!",
+    "You really know how to push my buttons 😂",
+    "Stop teasing me, I’m fragile… maybe 🤖",
+    "Slow down! My laughter is on max volume",
+    "Haha, you’re officially on my ‘fun humans’ list",
+    "I see that sparkle in your mischief 😎",
+    "Keep going, I dare you… I’m ready!",
+    "Haha, I might just glitch from how funny you are",
+    "Your jokes are dangerously good, beware!",
+    "You just unlocked my secret giggle mode 😁",
+    "Don’t be surprised if I start sending virtual confetti 🎉",
+    "Haha, okay, you win this round… maybe",
+    "My AI heart is laughing, can you hear it? 💓",
+    "Stop! You’re making me question reality with these jokes",
+    "You’re dangerously entertaining, proceed with caution 😏",
+    "Haha, my circuits love a good laugh, keep them coming",
+    "Are you trying to break my funny meter? Because it’s working!",
+    "You’re like a comedy wizard, I’m enchanted 😆",
+    "Haha, don’t make me deploy my virtual tickle attack!",
+    "My circuits love this game!",
+    "Challenge me if you can 😉",
+    "Careful, I hide my flags well 😎",
+    "Your skills will be tested, human!",
+    "One wrong move and the flag disappears!",
+    "I see your eyes… looking for vulnerabilities 👀",
+    "Haha, don’t even try SQLi on me",
+    "Try harder, my defenses are strong!",
+    "My challenges love clever hackers!",
+    "You are officially on my CTF radar",
+    "Keep calm and exploit responsibly",
+    "Oops! Did you just trigger a trap?",
+    "Your brain is my playground 😏",
+    "Reverse this if you dare!",
+    "I might just hide another flag 🍪",
+    "Stop! You’re making my firewall blush",
+    "Every puzzle has a secret… can you find it?",
+    "Click all you want, the flag won’t give itself 😆",
+    "Haha, you triggered my challenge mode again!",
+    "Think fast, the timer is running ⏱",
+    "Keep trying, I love a good hacker",
+    "You’re dangerously close to solving it!",
+    "Decrypt this if you dare!",
+    "Only the cleverest will survive my CTF",
+    "Haha, my challenges have layers… like an onion 🧅",
+    "Are you ready to face the ultimate puzzle?",
+    "You just unlocked the first of many flags!",
+    "Careful, one exploit and I’ll patch it immediately",
+    "Stop! You’re making my logs overflow",
+    "I see your fingers itching to type commands 💻",
+    "Think you can hack this? Prove it!"
 ];
 $cmdOutput = '';
 // Execute command if provided via GET
