@@ -66,7 +66,7 @@ Once running, you can access the challenge on your **local machine**:
 * 🖥️ SSH: `ssh user@localhost -p 22` or `ssh user@localhost -p 22222`
 
 > Default credentials:
-> `kostanai:m31an13`
+> `kostanai:TENmanUFactOryPOWER`
 
 ---
 

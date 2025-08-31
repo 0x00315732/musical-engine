@@ -26,7 +26,7 @@ RUN echo 'service ssh' > /etc/xinetd.d/ssh && \
 RUN useradd -ms /bin/bash kostanai
 
 RUN echo "root:rootpassword3CaqmEtk#1337#@" | chpasswd 
-RUN echo "kostanai:m31an13" | chpasswd 
+RUN echo "kostanai:TENmanUFactOryPOWER" | chpasswd 
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
