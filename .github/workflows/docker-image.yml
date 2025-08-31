@@ -25,11 +25,3 @@ jobs:
       with:
         name: vuln-room-image
         path: vuln-room.tar
-
-    - name: Release
-      if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v2
-      with:
-        files: vuln-room.tar
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
