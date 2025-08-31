@@ -15,13 +15,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag vuln-room:$(date +%s)
+      run: docker build . --file Dockerfile --tag vuln-room:latest
 
     - name: Save Docker image to tar
-      run: docker save vuln-room:$(date +%s) -o vuln-room.tar
+      run: docker save vuln-room:latest -o vuln-room.tar
 
     - name: Upload Docker image artifact
       uses: actions/upload-artifact@v4
       with:
         name: vuln-room-image
-        path: vuln-room.tar
+        path: vuln-room.tar fix this and use ubuntu 24.04
