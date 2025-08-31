@@ -24,7 +24,7 @@ If hosted on GitHub:
 
 ```bash
 git clone https://github.com/0x00315732/musical-engine.git
-cd vuln-room
+cd musical-engine
 ```
 
 ---
