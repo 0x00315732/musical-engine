@@ -24,4 +24,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: vuln-room-image
-        path: vuln-room.tar fix this and use ubuntu 24.04
+        path: vuln-room.tar
